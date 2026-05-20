@@ -1,0 +1,114 @@
+:root {
+  /* Brand/Theme Colors */
+  --color-primary: #1e293b;       /* Primary interactive elements (e.g., Dark Slate) */
+  --color-primary-hover: #0f172a; /* Hover state for primary actions */
+  --color-accent: #2563eb;        /* Secondary callouts/focus links (e.g., Classic Blue) */
+  
+  /* System State Colors */
+  --color-success: #16a34a;       /* Valid actions / Secured status (Green) */
+  --color-error: #dc2626;         /* Errors / Failed requests / Crashes (Red) */
+  --color-warning: #ea580c;       /* Pending items / In-Inspection status (Orange) */
+  
+  /* Neutral Palette (Backgrounds and Surfaces) */
+  --color-bg-app: #f8fafc;        /* App structural background (Light Cool Gray) */
+  --color-bg-surface: #ffffff;    /* Card and modal backgrounds */
+  --color-border: #e2e8f0;        /* Structural dividers and input borders */
+  
+  /* Typography Colors */
+  --color-text-main: #0f172a;     /* Headings and body copy */
+  --color-text-muted: #64748b;    /* Labels, disabled helper text, and captions */
+
+  /* Structural Variables */
+  --radius-sm: 4px;               /* Strict, subtle rounding for inputs and buttons */
+  --radius-md: 6px;               /* Soft but structured rounding for cards */
+  --transition-fast: 0.15s ease;
+
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-main);
+  background: var(--color-bg-app);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--color-bg-app);
+  color: var(--color-text-main);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: #1d4ed8;
+}
+
+button {
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* Remove default scrollbar styling on webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-app);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}

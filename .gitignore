@@ -1,0 +1,10 @@
+/build
+/frontend/node_modules
+details.md
+docs.txt
+cmake_install.cmake
+CMakeCache.txt
+escrow_server
+Makefile
+details2.md
+
